@@ -10,7 +10,6 @@ function adjustGameStageSize(){
     height = window.innerHeight;
     width  = window.innerWidth;
 
-    console.log(height, width);
 }
 
 adjustGameStageSize();
@@ -25,13 +24,29 @@ function positionRandom(){
 
     
     fly.src = '../../assets/imges/mosca.png';
-    fly.className ='flyOne';
+    fly.className = randomSize();
     fly.style.left = positionX + 'px';
     fly.style.top = positionY + 'px';
     fly.style.position = 'absolute';
     
     document.body.appendChild(fly);
+    
+    randomSize();
+}
 
+function randomSize(){
+
+    var classe = Math.floor(Math.random() * 3);
+
+    switch(classe){
+        case 0:
+            return 'flyOne';
+        case 1:
+            return 'flyTwo';
+        case 2:
+            return 'flyThree';
+
+    }
 }
     
 
