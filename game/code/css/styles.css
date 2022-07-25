@@ -16,3 +16,19 @@
     width: 90px;
     height: 90px;
 }
+
+.sideRight{
+
+    transform: scaleX(1);
+
+}
+
+.sideLeft{
+
+    transform: scaleX(-1);
+
+}
+
+
+
+

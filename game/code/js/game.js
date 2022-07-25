@@ -5,16 +5,16 @@ var positionX = 0;
 var positionY = 0;
 var fly  = document.createElement('img');
 
-function adjustGameStageSize(){
+function AdjustGameStageSize(){
 
     height = window.innerHeight;
     width  = window.innerWidth;
 
 }
 
-adjustGameStageSize();
+AdjustGameStageSize();
 
-function positionRandom(){
+function PositionRandom(){
 
     positionX = Math.floor(Math.random() * width) - 90;
     positionY = Math.floor(Math.random() * height) - 90;
@@ -24,17 +24,17 @@ function positionRandom(){
 
     
     fly.src = '../../assets/imges/mosca.png';
-    fly.className = randomSize();
+    fly.className = RandomSize() +' '+ SideRandom();
     fly.style.left = positionX + 'px';
     fly.style.top = positionY + 'px';
     fly.style.position = 'absolute';
     
     document.body.appendChild(fly);
     
-    randomSize();
+    RandomSize();
 }
 
-function randomSize(){
+function RandomSize(){
 
     var classe = Math.floor(Math.random() * 3);
 
@@ -47,6 +47,22 @@ function randomSize(){
             return 'flyThree';
 
     }
+}
+
+function SideRandom(){
+
+    var classe = Math.floor(Math.random() * 2);
+
+    switch(classe){
+        case 0:
+            return 'sideRight';
+        case 1:
+            return 'sideLeft';
+ 
+
+    }
+
+
 }
     
 
