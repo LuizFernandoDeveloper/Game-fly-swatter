@@ -23,12 +23,12 @@ function PositionRandom(){
         document.getElementById('fly').remove;
         if(lifes > 3){
 
-            alert('Interromper o jogo (game over)')
+            alert('Interromper o jogo (game over)');
         }
         else{
 
             document.getElementById('life' + lifes).src = "../../assets/imges/coracao_vazio.png";
-
+            lifes++
         }
         
     }
