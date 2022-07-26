@@ -6,6 +6,30 @@ var positionY = 0;
 var fly  = document.createElement('img');
 var lifes = 1 ;
 var timer = 10;
+var timercOfCreateFly = 0;
+
+var level =((window.location.search).replace('?', ''));
+
+if(level === 'normal'){
+
+    timercOfCreateFly = 1500;
+}
+
+else if(level === 'difficult'){
+
+    timercOfCreateFly = 1000;
+}
+
+else if (level === 'chucknorris'){
+
+    timercOfCreateFly = 750;
+}
+
+else{
+
+    alert("Erro: volte e selecione um nivel");
+    window.location.href = "index.html";
+}
 
 function AdjustGameStageSize(){
 
