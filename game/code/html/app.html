@@ -13,12 +13,31 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Fly Swatter</title>
-
-</head>
-<body onresize="AdjustGameStageSize()">
  
+</head>
+
+<body onresize="AdjustGameStageSize()">
+
+    <div class="Painel">
+
+        <div class="Vidas">
+            
+            <img id="life1" src="../../assets/imges/coracao_cheio.png" alt="Coração" srcset="">
+            <img id="life2" src="../../assets/imges/coracao_cheio.png" alt="Coração" srcset="">
+            <img id="life3" src=" " alt="Coração" srcset="">
+
+        </div>
+
+        <div class="Cronometro">Tempo restante: ?</div>
+
+    </div>
+
     <script>
-        PositionRandom()
+
+        setInterval(function(){
+            PositionRandom();
+        }, 1000)
+        
     </script>
 
 </body>

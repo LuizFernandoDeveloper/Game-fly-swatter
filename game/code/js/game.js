@@ -4,6 +4,8 @@ var width  =  0;
 var positionX = 0;
 var positionY = 0;
 var fly  = document.createElement('img');
+var lifes = 1 ;
+
 
 function AdjustGameStageSize(){
 
@@ -15,6 +17,22 @@ function AdjustGameStageSize(){
 AdjustGameStageSize();
 
 function PositionRandom(){
+
+    if(document.getElementById('fly')) {
+
+        document.getElementById('fly').remove;
+        if(lifes > 3){
+
+            alert('Interromper o jogo (game over)')
+        }
+        else{
+
+            document.getElementById('life' + lifes).src = "../../assets/imges/coracao_vazio.png";
+
+        }
+        
+    }
+    
 
     positionX = Math.floor(Math.random() * width) - 90;
     positionY = Math.floor(Math.random() * height) - 90;
@@ -28,7 +46,12 @@ function PositionRandom(){
     fly.style.left = positionX + 'px';
     fly.style.top = positionY + 'px';
     fly.style.position = 'absolute';
-    
+    fly.id = 'fly'
+    fly.onclick = function(){
+
+        this.remove()
+    }
+
     document.body.appendChild(fly);
     
     RandomSize();
