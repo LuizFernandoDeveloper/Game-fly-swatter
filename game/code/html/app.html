@@ -28,15 +28,17 @@
 
         </div>
 
-        <div class="Cronometro">Tempo restante: ?</div>
+        <div class="Cronometro">Tempo restante:<span id="stopwatch"></span></div>
 
     </div>
 
     <script>
 
-        setInterval(function(){
+        document.getElementById('stopwatch').innerHTML = timer;
+
+        var createFly = setInterval(function(){
             PositionRandom();
-        }, 1000)
+        }, 1000);
         
     </script>
 

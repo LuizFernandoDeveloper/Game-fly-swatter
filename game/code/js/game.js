@@ -5,7 +5,7 @@ var positionX = 0;
 var positionY = 0;
 var fly  = document.createElement('img');
 var lifes = 1 ;
-
+var timer = 10;
 
 function AdjustGameStageSize(){
 
@@ -16,19 +16,39 @@ function AdjustGameStageSize(){
 
 AdjustGameStageSize();
 
+var stopwatch = setInterval(function() {
+
+    timer -= 1;
+    if(timer < 0){
+
+        clearInterval(stopwatch);
+        clearInterval(createFly);
+        window.location.href = 'victory.html'
+
+    }
+    else{
+
+        document.getElementById('stopwatch').innerHTML = timer;
+    }
+    
+    
+}, 1000);
+
 function PositionRandom(){
 
     if(document.getElementById('fly')) {
 
         document.getElementById('fly').remove;
+
         if(lifes > 3){
 
-            alert('Interromper o jogo (game over)');
+            window.location.href = 'game-Over.html';
+            
         }
         else{
 
             document.getElementById('life' + lifes).src = "../../assets/imges/coracao_vazio.png";
-            lifes++
+            lifes++;
         }
         
     }
