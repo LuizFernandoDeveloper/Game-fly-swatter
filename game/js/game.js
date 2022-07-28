@@ -71,7 +71,7 @@ function PositionRandom(){
         }
         else{
 
-            document.getElementById('life' + lifes).src = "../../assets/imges/coracao_vazio.png";
+            document.getElementById('life' + lifes).src = "./assets/imges/coracao_vazio.png";
             lifes++;
         }
         
@@ -84,15 +84,15 @@ function PositionRandom(){
     positionX = positionX <0 ? 0 : positionX;
     positionY = positionY <0 ? 0 : positionY;
 
-    
-    fly.src = '../../assets/imges/mosca.png';
+ 
+
+    fly.src = './assets/imges/mosca.png';
     fly.className = RandomSize() +' '+ SideRandom();
     fly.style.left = positionX + 'px';
     fly.style.top = positionY + 'px';
     fly.style.position = 'absolute';
     fly.id = 'fly'
     fly.onclick = function(){
-
         this.remove()
     }
 

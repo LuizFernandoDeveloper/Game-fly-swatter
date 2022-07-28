@@ -1,6 +1,10 @@
+html{
+
+    cursor: url(../assets/imges/mata_mosca.png)30 30, auto;
+}
 body{
 
-    background-image: url('../../assets/imges/bg.jpg');
+    background-image: url('../assets/imges/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: aqua;
