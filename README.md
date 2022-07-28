@@ -21,10 +21,10 @@
 - Na pagina do jogo vamos ter que nos atentar nos corações que simbolizam a vida do jogador e no tempo maximo de cada partida, o nível vai influenciar na velocidade em que a mosca e criada e retira do senario do jogo. Toda vez que um mosquito sumir antes que você mate-o, você vai perder um coração que simboliza suas vidas e apos peder todos voce vaipara a pagina de game over. Caso fique vivo ate o final do tempo maximo de cada partida você saira vitorioso do jogo.
    ![img](./imgReadme/game.png)
 
-   - padina de Game Over
+   - pagina de Game Over
     ![img](./imgReadme/game-over.png)
 
-    - padina da vitória
+    - pagina da vitória
     ![img](./imgReadme/victory.png)
     
 #
