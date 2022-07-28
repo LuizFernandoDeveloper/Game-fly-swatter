@@ -66,7 +66,7 @@ function PositionRandom(){
 
         if(lifes > 3){
 
-            window.location.href = 'game-Over.html';
+            window.location.href = 'game-over.html';
             
         }
         else{
