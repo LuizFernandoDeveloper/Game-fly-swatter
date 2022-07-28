@@ -1,5 +1,7 @@
 # Game-fly-swatter
-
+  ### Licença vinculada ao repositório
+  [![NPM](https://img.shields.io/github/license/LuizFernandoDeveloper/Game-fly-swatter)](https://github.com/LuizFernandoDeveloper/Game-fly-swatter/blob/main/LICENSE)
+      
 ## Objetivo  do jogo "Mata Mosquito"
 
 - Colocar em pratica conhecimentos adiquiridos nos estudos da linguagem javascript;
