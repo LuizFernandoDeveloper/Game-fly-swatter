@@ -32,4 +32,4 @@
 #
 ## Para jogar o game clique no link
 
-<a href="http://gameflyswatter.rf.gd/index.html" target="_blank">Game Fly Swatter</a>
+<a href="https://game-fly-swatter.vercel.app/" target="_blank">Game Fly Swatter</a>
